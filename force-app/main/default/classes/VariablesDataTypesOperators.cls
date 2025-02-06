@@ -61,7 +61,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer result = (a*b);
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -74,11 +75,15 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Double division(Double a, Double b) {
-        return null; // Replace null with the variable you used to store the result
+        
+        if(b==0){
+            return 0.0;
+        }
+        return (a/b); // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 5
+ --------* Question 5----------
      * Checks if a number is even.
      * Example: isEven(2) should return true
      * This concept is not specifically covered in the content this week, but you can use the Math class and the modulus function to understand if the number is even or odd.
@@ -88,8 +93,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
-    }
+        if(num >=0){
+            return true;
+        }
+        return false;
+    }// Replace null with the variable you used to store the result
+    
 
     /**
      * Question 6
@@ -99,7 +108,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        if(num >=0){
+            return true;
+        }
+        return false; // Replace null with the variable you used to store the result
     }
 
     /**
